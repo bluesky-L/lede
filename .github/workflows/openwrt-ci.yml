@@ -7,12 +7,12 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: OpenWrt-master
+name: OpenWrt-second
 
 on:
   push:
     branches: 
-      - master
+      - second
   # schedule:
   #   - cron: 0 20 * * *
   # release:
@@ -180,7 +180,6 @@ jobs:
           CONFIG_PACKAGE_luci-app-noddos=y
           CONFIG_PACKAGE_luci-app-sfe=y
           CONFIG_PACKAGE_luci-app-sqm=y
-          CONFIG_PACKAGE_luci-app-nlbwmon=y
           CONFIG_PACKAGE_luci-app-meshwizard=y
           CONFIG_PACKAGE_luci-app-flowoffload=y
           CONFIG_PACKAGE_luci-app-dnscrypt-proxy=y
